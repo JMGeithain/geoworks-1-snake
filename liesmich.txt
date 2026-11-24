@@ -1,0 +1,52 @@
+SCHNECKE - Snake fuer GeoWorks 1 (Ensemble 1.2 / GeoWorks 1.28)
+================================================================
+
+DATEI
+  g1snake.geo   das Spiel (Programmname "Schnecke", eigenes Icon)
+
+INSTALLATION
+  1. g1snake.geo in einen Ordner im GeoWorks-Verzeichnis kopieren,
+     z. B. in WORLD oder in einen Spiele-Ordner (WORLD\GAMES o. ae.).
+  2. Im GeoManager den Ordner oeffnen und das Icon "Schnecke"
+     doppelklicken.
+
+STEUERUNG
+  Pfeiltasten oder W A S D   Schnecke lenken
+  Erster Tastendruck         startet den Lauf. Danach laeuft die
+                             Schnecke von selbst weiter, bis du sie
+                             mit einer anderen Richtung neu ausrichtest.
+  P                          Pause / Weiter
+  R                          Neustart (z. B. nach GAME OVER)
+
+SPIELREGELN
+  - Rote Punkte einsammeln: pro Punkt wird die Schnecke ein Glied
+    laenger und der Punktestand steigt um 1.
+  - Je hoeher der Punktestand, desto schneller wird die Schnecke.
+  - GAME OVER bei Beruehrung des Randes oder des eigenen Koerpers.
+  - Kopf: gelb (bei GAME OVER rot), Koerper: gruen.
+
+SPIELFELD UND FENSTER
+  - Das Fenster startet zentriert und passt zum Spielfeld.
+  - Das Spielfeld passt sich der Fenstergroesse an (auch beim
+    Maximieren und bei hohen Bildschirmaufloesungen). Bei einer
+    Groessenaenderung startet das Spiel neu.
+  - Ab etwa 1400 x 700 Pixeln Fensterinhalt werden Zellen und
+    Schrift doppelt so gross dargestellt.
+
+HIGHSCORE
+  Der beste Stand steht oben ("BEST") und wird in der Datei
+  SCHNECKE.SCO im Ordner GEOWORKS\STATE gespeichert. Zum
+  Zuruecksetzen diese Datei loeschen.
+
+DATEIEN IM REPOSITORY
+  g1snake.geo            fertiges Spiel
+  snake-asm/             Quelltext (snake.nasm, project.json, icon.txt)
+  sdk-patch/icon-support.patch
+                         SDK-Erweiterung fuer Icons/Fenstergroesse
+  varianten/g1snake_B.geo
+                         aeltere Variante (feste Feldgroesse)
+
+ENTWICKLUNG
+  Erstellt in Assembler (NASM, 8086) mit dem SDK
+  https://github.com/dnesbitt142/pcgeos-1-sdk-v2
+  Bauen: perl sdk.pl build --project examples/snake-asm

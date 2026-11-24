@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "name": "g1snake",
+  "kind": "application",
+  "backend": "ensemble12",
+  "cpu": "8086",
+  "long_name": "Schnecke",
+  "token": "G1SK",
+  "sources": [
+    {
+      "language": "nasm",
+      "path": "snake.nasm"
+    }
+  ],
+  "view": {
+    "width": 560,
+    "height": 356,
+    "max_width": 2048,
+    "max_height": 1536
+  },
+  "native_runtime_tested": false,
+  "icon": {
+    "art": "icon.txt"
+  },
+  "window_hint": [
+    7,
+    2
+  ]
+}
