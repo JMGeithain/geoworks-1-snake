@@ -19,3 +19,7 @@ perl sdk.pl build --project examples/snake-asm
 ```
 
 Voraussetzungen: Perl und NASM.
+
+## Lizenz
+
+Apache License 2.0, siehe [LICENSE](LICENSE).
