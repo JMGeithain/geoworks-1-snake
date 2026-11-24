@@ -1,4 +1,5 @@
-; SPDX-License-Identifier: MIT
+; SPDX-License-Identifier: Apache-2.0
+; Copyright 2026 Johannes Möller
 ; Snake for the Ensemble 1.2 profile of the PC/GEOS 1.x community SDK.
 ; Arrow keys or W A S D: the first press starts the run, further presses steer.
 ; P pauses/resumes, R / Space restart.  The snake grows by one segment per

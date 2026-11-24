@@ -50,3 +50,7 @@ ENTWICKLUNG
   Erstellt in Assembler (NASM, 8086) mit dem SDK
   https://github.com/dnesbitt142/pcgeos-1-sdk-v2
   Bauen: perl sdk.pl build --project examples/snake-asm
+
+LIZENZ
+  Copyright 2026 Johannes Moeller
+  Apache License 2.0 (siehe Datei LICENSE)

@@ -22,4 +22,6 @@ Voraussetzungen: Perl und NASM.
 
 ## Lizenz
 
-Apache License 2.0, siehe [LICENSE](LICENSE).
+Copyright 2026 Johannes Möller
+
+Lizenziert unter der Apache License 2.0, siehe [LICENSE](LICENSE).
